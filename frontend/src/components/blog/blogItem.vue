@@ -4,7 +4,7 @@
             <v-container>
                 <v-layout>
                     <v-row>
-                        <v-col>
+                        <v-col> 
                             <v-card-title class="title">
                                 발행 포스트
                             </v-card-title>
