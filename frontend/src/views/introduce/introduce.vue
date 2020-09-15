@@ -13,32 +13,24 @@
             </v-layout>
         </v-container>
         <IntroduceContents/>
-        </v-app>
-    </template>
+    </v-app>
+</template>
 
 <script>
-    import IntroduceEdit from "../../components/introduce/introduceEdit"
     import IntroduceTitle from "../../components/introduce/introduceTitle"
     import IntroduceItem from "../../components/introduce/introduceItem"
     import IntroduceContents from "../../components/introduce/introduceContents"
     export default {
         components: {
-            IntroduceEdit,
             IntroduceTitle,
             IntroduceItem,
             IntroduceContents
         },
         data () {
             return {
-                textArea: [v => v.length <= 500 || 'Max 500 characters'],
-                value: null,
-                // isActive: false
             }
         },
         created(){
-            // setTimeout(() => {
-            //    this.isActive = true;
-            // }, 2000);
         },
         methods: {
         },
