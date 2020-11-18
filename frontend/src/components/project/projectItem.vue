@@ -21,13 +21,13 @@
                         </div>
                     </v-col>
                     <v-col>
-                        <v-chip class="mt-3" color="#01A9DB" text-color="white" @click:close="close">
+                        <v-chip class="mt-3" color="#01A9DB" text-color="white"  @click="projectAddMove">
                             <v-avatar left="left">
                                 <v-icon>mdi-circle-edit-outline</v-icon>
                             </v-avatar>
                             프로젝트 등록
                         </v-chip>
-                        <v-chip class="mt-3" color="orange" text-color="white" @click:close="close">
+                        <v-chip class="mt-3" color="orange" text-color="white" @click:close="close" >
                             <v-avatar left="left">
                                 <v-icon>mdi-book-open-outline</v-icon>
                             </v-avatar>
@@ -51,6 +51,11 @@ export default {
                 'Plog(진행중)',
             ],
         }
+    },
+    methods:{
+            projectAddMove () {
+                this.$router.push('/projectAdd');
+            },
     },
     computed:{
         slidesCnt: function(){

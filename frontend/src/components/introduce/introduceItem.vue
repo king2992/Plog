@@ -54,7 +54,7 @@
 import IntroduceFollowers from "./introduceFollowers"
 export default {
     components: {
-        IntroduceFollowers,
+        IntroduceFollowers
     },
     data(){
         return{

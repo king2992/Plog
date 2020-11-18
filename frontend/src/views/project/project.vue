@@ -26,7 +26,7 @@ import ProjectContents from "../../components/project/projectContents"
     },
   }
 </script>
- <style>
+ <style scoped>
         #Project {
             background-color: #EFFBF2;
         }

@@ -1,5 +1,5 @@
 <template>
-    <v-app id="Users">
+    <v-app id="blog">
         <v-container style="margin-left:12%;">
             <v-layout row="row" class="mt-5">
                  <v-flex row="row">
@@ -33,7 +33,7 @@
 </script>
 
  <style>
-        #Users{
+        #blog{
             background-color :#EFFBF2;
         }
 </style>

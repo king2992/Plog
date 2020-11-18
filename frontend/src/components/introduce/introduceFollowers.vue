@@ -1,5 +1,5 @@
 <template>
-    <v-dialog v-model="dialog" width="550">
+    <v-dialog v-model="dialog" width="550" >
         <template v-slot:activator="{ on, attrs }">
             <v-chip class="mt-3" color="black" text-color="white" v-on="on" v-bind="attrs">
                 <v-avatar left="left">
@@ -9,11 +9,11 @@
             </v-chip>
         </template>
 
-        <v-card>
+        <v-card  class="dialog">
             <v-card-title class="headline grey lighten-2">
                 팔로워
             </v-card-title>
-            <v-text-field class="search-textFiled">
+            <v-text-field class="search-textFiled" style="width:90%;margin-left:5%;">
                 <v-icon slot="append" color="red">mdi-account-search</v-icon>
             </v-text-field>
             <v-card-text>
@@ -59,5 +59,7 @@ export default {
 </script>
 
 <style scoped>
-
+.dialog{
+    overflow: hidden;
+}
 </style>

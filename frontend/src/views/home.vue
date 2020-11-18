@@ -1,9 +1,8 @@
 <template>
     <v-app id="home">
-       <div class="starter">
+       <div class="starter" >
             <v-row justify="center" >
                 <v-dialog v-model="homeDialog"
-                          persistent="persistent"
                           max-width="1000"
                           >
                     <template v-slot:activator="{ on }">
@@ -102,6 +101,9 @@
 </script>
 
 <style>
+    .dialog{
+        overflow: hidden;
+    }
     @keyframes kenburns-bottom{
         0%{
             transform:scale(1) translateY(0);
